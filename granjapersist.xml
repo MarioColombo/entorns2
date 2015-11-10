@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Granja adreça="C/Serra" codi="1" nom="Subirats">
+    <Tecnic cognom="Pallars" nif="38" nom="Maria"/>
+    <Tecnic cognom="Jaen" nif="39" nom="Miguel"/>
+    <Operari cognom="Linares" nif="150" nom="Salvador"/>
+    <Operari cognom="Perez" nif="151" nom="Manuela"/>
+    <Animal alt="14.0" codi="547" especie="porc" pes="12.0"/>
+    <Animal alt="45.0" codi="548" especie="ànec" pes="44.0"/>
+    <Nau codi="62" nom="Porcs">
+        <Tecnic cognom="Jaen" nif="39" nom="Miguel"/>
+        <Operari cognom="Linares" nif="150" nom="Salvador"/>
+        <Operari cognom="Perez" nif="151" nom="Manuela"/>
+        <Animal alt="14.0" codi="547" especie="porc" pes="12.0"/>
+    </Nau>
+</Granja>

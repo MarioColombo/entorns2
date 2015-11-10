@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Reverse engineered U1A1R1Escola 2015.02.16 12-17-49-050">
+  <ClassDiagramComponents>
+    <Class xPosition="20.0" yPosition="20.0" package="principal" name="Escola" visibility="public">
+      <Constructors>
+        <Constructor name="Escola" visibility="public">
+          <Argument type="String" name="nom"/>
+          <Argument type="String" name="adreça"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="comptaCodi" visibility="private" type="Integer" isStatic="true"/>
+        <Field name="codi" visibility="private" type="Integer"/>
+        <Field name="nom" visibility="private" type="String"/>
+        <Field name="adreça" visibility="private" type="String"/>
+        <Field name="professors" visibility="private" type="Professor[]"/>
+        <Field name="comptaProfessors" visibility="private" type="Integer"/>
+        <Field name="alumnes" visibility="private" type="Alumne[]"/>
+        <Field name="comptaAlumnes" visibility="private" type="Integer"/>
+        <Field name="assignatures" visibility="private" type="Assignatura[]"/>
+        <Field name="comptaAssignatures" visibility="private" type="Integer"/>
+        <Field name="grups" visibility="private" type="Grup[]"/>
+        <Field name="comptaGrups" visibility="private" type="Integer"/>
+      </Fields>
+      <Methods>
+        <Method name="getComptaCodi" visibility="public" returnType="Integer" isStatic="true"/>
+        <Method name="setComptaCodi" visibility="public" returnType="void" isStatic="true"/>
+        <Method name="getCodi" visibility="public" returnType="Integer"/>
+        <Method name="setCodi" visibility="public" returnType="void">
+          <Argument type="Integer" name="codi"/>
+        </Method>
+        <Method name="getNom" visibility="public" returnType="String"/>
+        <Method name="setNom" visibility="public" returnType="void">
+          <Argument type="String" name="nom"/>
+        </Method>
+        <Method name="getAdreça" visibility="public" returnType="String"/>
+        <Method name="setAdreça" visibility="public" returnType="void">
+          <Argument type="String" name="adreça"/>
+        </Method>
+        <Method name="getProfessors" visibility="public" returnType="Professor[]"/>
+        <Method name="setProfessors" visibility="public" returnType="void">
+          <Argument type="Professor[]" name="professors"/>
+        </Method>
+        <Method name="getComptaProfessors" visibility="public" returnType="Integer"/>
+        <Method name="setComptaProfessors" visibility="public" returnType="void">
+          <Argument type="Integer" name="comptaProfessors"/>
+        </Method>
+        <Method name="getAlumnes" visibility="public" returnType="Alumne[]"/>
+        <Method name="setAlumnes" visibility="public" returnType="void">
+          <Argument type="Alumne[]" name="alumnes"/>
+        </Method>
+        <Method name="getComptaAlumnes" visibility="public" returnType="Integer"/>
+        <Method name="setComptaAlumnes" visibility="public" returnType="void">
+          <Argument type="Integer" name="comptaAlumnes"/>
+        </Method>
+        <Method name="getAssignatures" visibility="public" returnType="Assignatura[]"/>
+        <Method name="setAssignatures" visibility="public" returnType="void">
+          <Argument type="Assignatura[]" name="assignatures"/>
+        </Method>
+        <Method name="getComptaAssignatures" visibility="public" returnType="Integer"/>
+        <Method name="setComptaAssignatures" visibility="public" returnType="void">
+          <Argument type="Integer" name="comptaAssignatures"/>
+        </Method>
+        <Method name="getGrups" visibility="public" returnType="Grup[]"/>
+        <Method name="setGrups" visibility="public" returnType="void">
+          <Argument type="Grup[]" name="grups"/>
+        </Method>
+        <Method name="getComptaGrups" visibility="public" returnType="Integer"/>
+        <Method name="setComptaGrups" visibility="public" returnType="void">
+          <Argument type="Integer" name="comptaGrups"/>
+        </Method>
+        <Method name="novaEscola" visibility="public" returnType="Escola" isStatic="true"/>
+        <Method name="modificaEscola" visibility="public" returnType="void"/>
+        <Method name="mostraEscola" visibility="public" returnType="void"/>
+        <Method name="nouProfessor" visibility="public" returnType="void"/>
+        <Method name="seleccionaProfessor" visibility="public" returnType="Integer"/>
+        <Method name="nouAlumne" visibility="public" returnType="void"/>
+        <Method name="seleccionaAlumne" visibility="public" returnType="Integer"/>
+        <Method name="novaAssignatura" visibility="public" returnType="void"/>
+        <Method name="seleccionaAssignatura" visibility="public" returnType="Integer"/>
+        <Method name="nouGrup" visibility="public" returnType="void"/>
+        <Method name="seleccionaGrup" visibility="public" returnType="Integer"/>
+        <Method name="afegeixProfessorGrup" visibility="public" returnType="void"/>
+        <Method name="afegeixAlumneGrup" visibility="public" returnType="void"/>
+        <Method name="afegeixAssignaturaGrup" visibility="public" returnType="void"/>
+      </Methods>
+    </Class>
+    <Class xPosition="320.0" yPosition="20.0" package="principal" name="Aplicacio" visibility="public">
+      <Constructors/>
+      <Fields>
+        <Field name="escoles" visibility="private" type="Escola[]" isStatic="true"/>
+        <Field name="comptaEscoles" visibility="private" type="Integer" isStatic="true"/>
+        <Field name="escolaActual" visibility="private" type="Escola" isStatic="true"/>
+      </Fields>
+      <Methods>
+        <Method name="main" visibility="public" returnType="void" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="menuPrincipal" visibility="private" returnType="void" isStatic="true"/>
+        <Method name="menuEscola" visibility="public" returnType="void" isStatic="true"/>
+        <Method name="menuProfessorat" visibility="public" returnType="void" isStatic="true"/>
+        <Method name="menuAlumnat" visibility="public" returnType="void" isStatic="true"/>
+        <Method name="menuAssignatures" visibility="public" returnType="void" isStatic="true"/>
+        <Method name="menuGrups" visibility="public" returnType="void" isStatic="true"/>
+        <Method name="seleccionaEscola" visibility="public" returnType="Integer" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class xPosition="620.0" yPosition="20.0" package="alumnat" name="Alumne" visibility="public">
+      <Constructors>
+        <Constructor name="Alumne" visibility="public">
+          <Argument type="String" name="nif"/>
+          <Argument type="String" name="nom"/>
+          <Argument type="String" name="cognom"/>
+          <Argument type="Date" name="dataNaixament"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="nif" visibility="private" type="String"/>
+        <Field name="nom" visibility="private" type="String"/>
+        <Field name="cognom" visibility="private" type="String"/>
+        <Field name="dataNaixement" visibility="private" type="Date"/>
+      </Fields>
+      <Methods>
+        <Method name="getNif" visibility="public" returnType="String"/>
+        <Method name="setNif" visibility="public" returnType="void">
+          <Argument type="String" name="nif"/>
+        </Method>
+        <Method name="getNom" visibility="public" returnType="String"/>
+        <Method name="setNom" visibility="public" returnType="void">
+          <Argument type="String" name="nom"/>
+        </Method>
+        <Method name="getCognom" visibility="public" returnType="String"/>
+        <Method name="setCognom" visibility="public" returnType="void">
+          <Argument type="String" name="cognom"/>
+        </Method>
+        <Method name="getDataNaixement" visibility="public" returnType="Date"/>
+        <Method name="setDataNaixement" visibility="public" returnType="void">
+          <Argument type="Date" name="dataNaixement"/>
+        </Method>
+        <Method name="getEdat" visibility="public" returnType="Integer"/>
+        <Method name="nouAlumne" visibility="public" returnType="Alumne" isStatic="true"/>
+        <Method name="modificaAlumne" visibility="public" returnType="void"/>
+        <Method name="mostraAlumne" visibility="public" returnType="void"/>
+      </Methods>
+    </Class>
+    <Class xPosition="920.0" yPosition="20.0" package="personal" name="Professor" visibility="public">
+      <Constructors>
+        <Constructor name="Professor" visibility="public">
+          <Argument type="String" name="nif"/>
+          <Argument type="String" name="nom"/>
+          <Argument type="String" name="cognom"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="nif" visibility="private" type="String"/>
+        <Field name="nom" visibility="private" type="String"/>
+        <Field name="cognom" visibility="private" type="String"/>
+      </Fields>
+      <Methods>
+        <Method name="getNif" visibility="public" returnType="String"/>
+        <Method name="setNif" visibility="public" returnType="void">
+          <Argument type="String" name="nif"/>
+        </Method>
+        <Method name="getNom" visibility="public" returnType="String"/>
+        <Method name="setNom" visibility="public" returnType="void">
+          <Argument type="String" name="nom"/>
+        </Method>
+        <Method name="getCognom" visibility="public" returnType="String"/>
+        <Method name="setCognom" visibility="public" returnType="void">
+          <Argument type="String" name="cognom"/>
+        </Method>
+        <Method name="nouProfessor" visibility="public" returnType="Professor" isStatic="true"/>
+        <Method name="modificaProfessor" visibility="public" returnType="void"/>
+        <Method name="mostraProfessor" visibility="public" returnType="void"/>
+      </Methods>
+    </Class>
+    <Class xPosition="20.0" yPosition="420.0" package="docencia" name="Grup" visibility="public">
+      <Constructors>
+        <Constructor name="Grup" visibility="public">
+          <Argument type="String" name="codi"/>
+          <Argument type="String" name="nom"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="codi" visibility="private" type="String"/>
+        <Field name="nom" visibility="private" type="String"/>
+        <Field name="professors" visibility="private" type="Professor[]"/>
+        <Field name="comptaProfessors" visibility="private" type="Integer"/>
+        <Field name="alumnes" visibility="private" type="Alumne[]"/>
+        <Field name="comptaAlumnes" visibility="private" type="Integer"/>
+        <Field name="assignatures" visibility="private" type="Assignatura[]"/>
+        <Field name="comptaAssignatures" visibility="private" type="Integer"/>
+      </Fields>
+      <Methods>
+        <Method name="getCodi" visibility="public" returnType="String"/>
+        <Method name="setCodi" visibility="public" returnType="void">
+          <Argument type="String" name="codi"/>
+        </Method>
+        <Method name="getNom" visibility="public" returnType="String"/>
+        <Method name="setNom" visibility="public" returnType="void">
+          <Argument type="String" name="nom"/>
+        </Method>
+        <Method name="getProfessors" visibility="public" returnType="Professor[]"/>
+        <Method name="setProfessors" visibility="public" returnType="void">
+          <Argument type="Professor[]" name="professors"/>
+        </Method>
+        <Method name="getAlumnes" visibility="public" returnType="Alumne[]"/>
+        <Method name="setAlumnes" visibility="public" returnType="void">
+          <Argument type="Alumne[]" name="alumnes"/>
+        </Method>
+        <Method name="getAssignatures" visibility="public" returnType="Assignatura[]"/>
+        <Method name="setAssignatures" visibility="public" returnType="void">
+          <Argument type="Assignatura[]" name="assignatures"/>
+        </Method>
+        <Method name="getComptaProfessors" visibility="public" returnType="Integer"/>
+        <Method name="setComptaProfessors" visibility="public" returnType="void">
+          <Argument type="Integer" name="comptaProfessors"/>
+        </Method>
+        <Method name="getComptaAlumnes" visibility="public" returnType="Integer"/>
+        <Method name="setComptaAlumnes" visibility="public" returnType="void">
+          <Argument type="Integer" name="comptaAlumnes"/>
+        </Method>
+        <Method name="getComptaAssignatures" visibility="public" returnType="Integer"/>
+        <Method name="setComptaAssignatures" visibility="public" returnType="void">
+          <Argument type="Integer" name="comptaAssignatures"/>
+        </Method>
+        <Method name="nouGrup" visibility="public" returnType="Grup" isStatic="true"/>
+        <Method name="afegeixProfessorGrup" visibility="public" returnType="void">
+          <Argument type="Professor" name="professor"/>
+        </Method>
+        <Method name="afegeixAlumneGrup" visibility="public" returnType="void">
+          <Argument type="Alumne" name="alumne"/>
+        </Method>
+        <Method name="afegeixAssignaturaGrup" visibility="public" returnType="void">
+          <Argument type="Assignatura" name="assignatura"/>
+        </Method>
+        <Method name="mostraGrup" visibility="public" returnType="void"/>
+      </Methods>
+    </Class>
+    <Class xPosition="320.0" yPosition="420.0" package="curriculum" name="Assignatura" visibility="public">
+      <Constructors>
+        <Constructor name="Assignatura" visibility="public">
+          <Argument type="String" name="codi"/>
+          <Argument type="String" name="nom"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="codi" visibility="private" type="String"/>
+        <Field name="nom" visibility="private" type="String"/>
+      </Fields>
+      <Methods>
+        <Method name="getCodi" visibility="public" returnType="String"/>
+        <Method name="setCodi" visibility="public" returnType="void">
+          <Argument type="String" name="codi"/>
+        </Method>
+        <Method name="getNom" visibility="public" returnType="String"/>
+        <Method name="setNom" visibility="public" returnType="void">
+          <Argument type="String" name="nom"/>
+        </Method>
+        <Method name="novaAssignatura" visibility="public" returnType="Assignatura" isStatic="true"/>
+        <Method name="modificaAssignatura" visibility="public" returnType="void"/>
+        <Method name="mostraAssignatura" visibility="public" returnType="void"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Escola" target="Grup" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Assignatura" target="Assignatura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Escola" target="Assignatura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="escoles" source="Aplicacio" target="Escola" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="escolaActual" source="Aplicacio" target="Escola" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="professors" source="Grup" target="Professor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="assignatures" source="Grup" target="Assignatura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Grup" target="Assignatura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="professors" source="Escola" target="Professor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="alumnes" source="Escola" target="Alumne" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Escola" target="Escola" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Escola" target="Professor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Escola" target="Alumne" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="alumnes" source="Grup" target="Alumne" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="assignatures" source="Escola" target="Assignatura" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="grups" source="Escola" target="Grup" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Alumne" target="Alumne" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Grup" target="Grup" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Grup" target="Professor" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Grup" target="Alumne" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Professor" target="Professor" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
